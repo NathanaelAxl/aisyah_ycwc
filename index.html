@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deteksi Kacamata - Computer Vision</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>👓 Deteksi Kacamata</h1>
+  <p>Computer Vision berbasis Teachable Machine</p>
+</header>
+
+<div class="container">
+  <div id="webcam-container"></div>
+
+  <div class="btn-group">
+    <button id="start-btn" onclick="init()">Mulai Kamera</button>
+    <button id="stop-btn" onclick="stopCamera()" disabled>Berhenti</button>
+  </div>
+
+  <div id="label-container"></div>
+  <div id="status">Klik "Mulai Kamera" untuk memulai deteksi</div>
+</div>
+
+<footer>Model dijalankan langsung di browser (tidak ada data yang dikirim ke server)</footer>
+
+<!-- TensorFlow.js dan library Teachable Machine -->
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
